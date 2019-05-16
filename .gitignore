@@ -5,4 +5,5 @@ config.json
 adminlist.json
 package-lock.json
 .vscode/
-.env
+*.env
+docker-compose.yml
