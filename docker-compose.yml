@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+   node-server:
+       build: .
+       restart: unless-stopped
+       volumes:
+           - .:/app
+       command: yarn start

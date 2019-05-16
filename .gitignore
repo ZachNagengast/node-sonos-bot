@@ -1,0 +1,8 @@
+dist/
+coverage
+node_modules/
+config.json
+adminlist.json
+package-lock.json
+.vscode/
+.env

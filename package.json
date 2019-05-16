@@ -1,0 +1,59 @@
+{
+  "name": "wag-sonos-bot",
+  "version": "1.0.0",
+  "description": "Wag sonos bot for controlling sonos via slack commands",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "start": "nodemon --exitcrash src/babel-index.js",
+    "pretest": "if [ ! -f 'config.json' ]; then cp config.json.example config.json; fi",
+    "test": "mocha --reporter spec",
+    "cover": "npm run pretest; node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --opts test/mocha.opts test/* -R spec"
+  },
+  "keywords": [
+    "sonos",
+    "slack",
+    "spotify"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.3.4",
+    "standard": "^11.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@segment/to-iso-string": "^1.0.1",
+    "@slack/client": "^3.5.1",
+    "babel-eslint": "^8.2.6",
+    "babel-register": "^6.26.0",
+    "console-timestamp": "^0.3.0",
+    "dotenv": "^6.0.0",
+    "html-entities": "^1.2.0",
+    "htmlencode": "0.0.4",
+    "minimatch": "^3.0.4",
+    "nconf": "^0.8.4",
+    "nodemon": "^1.19.0",
+    "request": "^2.83.0",
+    "semver": "^5.4.1",
+    "sonos": "^1.10.1",
+    "urlencode": "^1.1.0",
+    "urllib-sync": "^1.1.2",
+    "uuid": "^3.2.1",
+    "xml2js": "^0.4.19"
+  },
+  "engines": {
+    "node": ">=7.5"
+  }
+}
