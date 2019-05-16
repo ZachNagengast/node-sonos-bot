@@ -12,7 +12,8 @@ Enter all required info into the `.env-example` and rename to `.env`
 With docker installed, simply run:
 
 ```
-docker-compose up -d
+yarn install
+sudo docker-compose up -d
 ```
 
 This will mount the local volume as the node server source, and uses `nodemon` to restart the server when local changes are detected.
