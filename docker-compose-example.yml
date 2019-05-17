@@ -3,10 +3,10 @@ version: '3'
 services:
 
    node-server:
-       build: .
-       restart: unless-stopped
-       env_file:
-           - example.env
-       volumes:
-           - .:/app
-       command: yarn start
+        build: .
+        restart: unless-stopped
+        env_file:
+            - example.env
+        volumes:
+            - .:/app
+        command: /bin/sh -c "yarn start"

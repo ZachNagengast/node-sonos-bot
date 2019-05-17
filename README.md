@@ -7,13 +7,13 @@ Refactored with ❤️
 
 **Configuration**
 
-Enter all required info into the `.env-example` and rename to `.env`
+Enter all required info into the `example.env` and rename `docker-compose-example.yml` to `docker-compose.yml`
 
-With docker installed, simply run:
+With Docker and docker-compose installed, simply run:
 
 ```
 yarn install
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
 This will mount the local volume as the node server source, and uses `nodemon` to restart the server when local changes are detected.

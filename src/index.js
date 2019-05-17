@@ -5,6 +5,7 @@ import config from './config';
 
 const start = () => {
   try {
+    log('Config: ', config)
     const slack = new RtmClient(config.SLACK_TOKEN, {
       logLevel: 'error',
       dataStore: new MemoryDataStore(),

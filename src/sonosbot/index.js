@@ -9,7 +9,7 @@ export const help = () => {
   // STANDARD
   let message = 'Current commands:\n' +
     ' ===  ===  ===  ===  ===  ===  === \n' +
-    '`;addd` _text_ : Add song to the end queue and start playing if idle. Will start with a fresh queue.\n' +
+    '`;add` _text_ : Add song to the end queue and start playing if idle. Will start with a fresh queue.\n' +
     '`;addnext` _text_ : Add song to play next in the queue.\n' +
     '`;search` _text_ : search for a track, does NOT add it to the queue\n' +
     '`;skip` : The current track is bad! ' + `${config.SKIP_LIMIT} votes will skip the track\n` +
